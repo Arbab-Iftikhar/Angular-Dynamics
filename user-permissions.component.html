@@ -1,0 +1,60 @@
+
+    <div class="secondary-header">
+        <h1>{{formTitle}}</h1>
+   
+<button class="save" mat-mini-fab 
+color="accent" matTooltip="save" matTooltipPosition="below" matTooltipClass="tooltip">
+    <mat-icon>save</mat-icon>
+ 
+</button>
+<button class="add" mat-mini-fab (click)="onAdd()"
+color="accent" matTooltip="add" matTooltipPosition="below" matTooltipClass="tooltip">
+    <mat-icon>add</mat-icon>
+ 
+</button>
+</div>
+   
+    <br><br>
+    <form>
+        <fieldset class="field_set" [disabled]="fieldsetDisabled">
+    <table>
+      <tr>
+        <th>Permissions</th>
+        <th>Save</th>
+        <th>Update</th>
+        <th>Delete</th>
+        <th>View</th>
+      </tr>
+      <tr>
+        <td>Dashboard</td>
+       <td>  <input type="checkbox" value=""></td>
+       <td>  <input type="checkbox" value=""></td>
+       <td>  <input type="checkbox" value=""></td>
+       <td>  <input type="checkbox" value=""></td>
+      </tr>
+      <tr>
+        <td>User Management</td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+      </tr>
+      <tr>
+        <td>Pereference</td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        
+      </tr>
+      <tr>
+        <td>Permissions</td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+        <td>  <input type="checkbox" value=""></td>
+      </tr>
+      <tr>
+    </table>
+</fieldset>
+</form>

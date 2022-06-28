@@ -1,0 +1,48 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    color: #1e88e5;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    font-family: arial, sans-serif;
+    text-align: left;
+    padding: 8px;
+    padding-left: 2%;
+  }
+  
+  
+  tr:nth-child(even) {
+      background-color: #df181800;
+    }
+
+    h1 {
+      font-weight: 100;
+    top: 6px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    }
+    
+    .field_set{
+      border-color: white;
+      border-style: none;
+    }
+
+  .add{
+  //  margin-left: 88%;
+    display: inline;
+    float: right;
+  }
+
+  .save{
+    //  margin-left: 88%;
+      display: inline;
+      float: right;
+    }
