@@ -1,0 +1,47 @@
+@import 'master';
+
+.mat-mini-fab.mat-button-disabled:not([class*=mat-elevation-z]) {
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 6px 10px 0px rgb(0 0 0 / 14%),
+    0px 1px 18px 0px rgb(0 0 0 / 12%);
+}
+
+.add {
+  left: 2px;
+  transform: scale(0.9);
+}
+
+.block {
+  left: 4px;
+  transform: scale(0.9);
+}
+.save {
+  left: 6px;
+  transform: scale(0.9);
+  transition: all 0.4s;
+  &.form-disabled{
+    background-color: $accent !important;
+    color: white !important;
+    opacity: .4;
+  }
+}
+
+.edit {
+  left: 8px;
+  transform: scale(0.9);
+}
+
+.delete {
+  left: 10px;
+  transform: scale(0.9);
+}
+
+.refresh {
+  left: 12px;
+  transform: scale(0.9);
+}
+
+.view {
+  left: 12px;
+  transform: scale(0.9);
+}

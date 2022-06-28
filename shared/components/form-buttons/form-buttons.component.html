@@ -1,0 +1,29 @@
+ <button *ngIf="ButtonsData.includes('ADD')" (click)="newClick()" [disabled]="Dnew" class="add" mat-mini-fab
+   color="accent" matTooltip="New" matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>add</mat-icon>
+ </button>
+ <button *ngIf="ButtonsData.includes('ADD')" (click)="discardClick()" [disabled]="Dblock" class="block" mat-mini-fab
+   color="accent" matTooltip="Discard" matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>block</mat-icon>
+ </button>
+ <button *ngIf="ButtonsData.includes('ADD')" (click)="saveClick()" [disabled]="Dsave || formvalid"
+   [ngClass]="+ formvalid && formshow? 'save form-disabled' : 'save'" mat-mini-fab color="accent" matTooltip="Save"
+   matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>save</mat-icon>
+ </button>
+ <button *ngIf="ButtonsData.includes('EDIT')" (click)="editClick()" [disabled]="Dedit || IsMultiSelected == true" class="edit" mat-mini-fab
+   color="accent" matTooltip="Edit" matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>edit</mat-icon>
+ </button>
+ <button *ngIf="ButtonsData.includes('DELETE')" (click)="deleteClick()" [disabled]="Ddelete || IsSelected == false" class="delete" mat-mini-fab
+   color="accent" matTooltip="Delete" matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>delete</mat-icon>
+ </button>
+ <button *ngIf="ButtonsData.includes('FETCH')" (click)="refreshClick()" [disabled]="Drefresh" class="refresh"
+   mat-mini-fab color="accent" matTooltip="Refresh" matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>refresh</mat-icon>
+ </button>
+ <button *ngIf="ButtonsData.includes('VIEW')" (click)="viewClick()" [disabled]="Dview" class="view"
+   mat-mini-fab color="accent" matTooltip="View" matTooltipPosition="below" matTooltipClass="tooltip">
+   <mat-icon>visibility</mat-icon>
+ </button>

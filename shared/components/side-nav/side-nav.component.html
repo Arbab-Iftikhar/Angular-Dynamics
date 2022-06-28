@@ -1,0 +1,52 @@
+<app-toolbar (toggleSidenav)="sidenav.toggle()"> </app-toolbar>
+<mat-sidenav-container class="app-sidenav-container" autosize>
+  <mat-sidenav #sidenav [mode]="isScreenSmall ? 'over' : 'side'" [opened]="isScreenSmall ? 'false' : 'true'"
+    role="navigation">
+    <perfect-scrollbar style="max-width: 600px;height: 90vh;">
+      <div class="Profile">
+        <div class="image">
+          <img src="../../../../assets/images/profile.png" alt="user">
+        </div>
+        <div class="text">
+          <a aria-haspopup="true">
+            Learning Workspace
+            <mat-icon>expand_more</mat-icon>
+          </a>
+        </div>
+      </div>
+      <mat-nav-list>
+        <a class="Parent-Menu" *ngFor="let menu of menus; let index">
+          <a mat-list-item (click)="onMenuSelect(index)" [class]="activeIndex === index ? 'active' : ''"
+            [routerLink]="menu.children.length === 0 ? menu.routerLink : undefined"
+            class="d-flex justify-content-between" matTooltip="{{menu.data?.menu.title}}" matTooltipPosition="right"
+            matTooltipClass="tooltip">
+            <mat-icon matListIcon>{{menu.data?.menu.icon}}</mat-icon>
+            <div class="menu-text">
+              <i class="im-paragraph-justify"></i>
+              <div>{{menu?.data?.menu?.title}}</div>
+            </div>
+            <div *ngIf="menu?.children?.length > 0" Class="submenu-icon">
+              <mat-icon *ngIf="activeIndex !== index" class="menu-toggle-icon">expand_more</mat-icon>
+              <mat-icon *ngIf="activeIndex === index" class="menu-toggle-icon">expand_less</mat-icon>
+            </div>
+          </a>
+          <ul class="sidebar-sub-menu pl-0">
+            <ng-container *ngFor="let child of menu.children">
+              <li
+                [ngClass]="activeIndex==index?'sub-menu-item cursor-pointer open':'sub-menu-item cursor-pointer close'"
+                [routerLink]="child.routerLink" routerLinkActive='active'>
+                <mat-list-item matTooltip="{{child.data?.menu.title}}" matTooltipPosition="right"
+                  matTooltipClass="tooltip submenu">
+                  <div class="name">{{child?.data?.menu?.title}}</div>
+                </mat-list-item>
+              </li>
+            </ng-container>
+          </ul>
+        </a>
+      </mat-nav-list>
+    </perfect-scrollbar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

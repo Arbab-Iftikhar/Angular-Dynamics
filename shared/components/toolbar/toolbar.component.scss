@@ -1,0 +1,23 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.menu-btn {
+  left: -5px;
+  position: relative;
+}
+
+.organization-name {
+  left: 3px;
+  position: relative;
+}
+
+.notify .point {
+  width: 6px;
+  height: 6px;
+  border-radius: 30px;
+  background-color: #fc4b6c;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}

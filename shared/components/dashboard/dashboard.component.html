@@ -1,0 +1,23 @@
+<div class="secondary-header">
+  <app-view-header  title="Dashboard"></app-view-header>
+</div>
+<div class="grid-container">
+  <!-- Counter Widgets Start -->
+  <mat-grid-list [cols]="cols" rowHeight="130px" style="margin-bottom: 100px;" (window:resize)="onResize($event)">
+    <mat-grid-tile *ngFor="let card of CountersArray" >
+      <mat-card>
+        <mat-card-content class="dashboard-card-content">
+          <button mat-fab aria-label="Example icon button with a delete icon" class="widget-icon" [style.background]="card.color">
+            <mat-icon>{{card.icon}}</mat-icon>
+          </button>
+          <div class="widget-content">
+            <h3 class="title">{{card.value}}</h3>
+            <h6 class="description">{{card.label}}</h6>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <div></div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <!--Counter Widgets End -->
+</div>
