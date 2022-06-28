@@ -1,0 +1,35 @@
+<div class="topnav"><br>
+<marquee behavior="slide" direction="Left"><h1><b></b>Angular Site </h1></marquee>
+
+</div>
+<div class="container">
+  <div class="forms-container">
+    <div class="signin-signup">
+      <form [formGroup]="LoginFrom" (ngSubmit)="Login()" class="sign-in-form">
+        <h2 class="title">Login </h2>
+        <h4>Enter Your Login Details To Continue</h4>
+        <div class="input-field">
+          <i class="fa fa-user"></i>
+          <input (ngModelChange)="start_validaiton_Login_Form('Username')" formControlName="Username" type="text"
+            placeholder="Username" />
+            <mat-icon *ngIf="!Login_Username!.invalid && started_Login_Username" class="textbox-icon">check_circle</mat-icon>
+            <mat-icon *ngIf="Login_Username!.invalid && started_Login_Username" class="textbox-icon error">error</mat-icon>
+        </div>
+        <div class="input-field">
+          <i class="fa fa-lock"></i>
+          <input (ngModelChange)="start_validaiton_Login_Form('Password')" formControlName="Password" type="password"
+            placeholder="Password" />
+            <mat-icon *ngIf="!Login_Password!.invalid && started_Login_Password" class="textbox-icon">check_circle</mat-icon>
+            <mat-icon *ngIf="Login_Password!.invalid && started_Login_Password" class="textbox-icon error">error</mat-icon>
+        </div>
+        <input [disabled]="!LoginFrom.valid" type="submit" value="Login" class="btn solid" />
+      </form>
+  </div>
+  <div class="panels-container">
+    
+      <img src="../../../assets/images/logo.png" class="image" alt="" />
+     
+    </div>
+    </div>
+  </div>
+

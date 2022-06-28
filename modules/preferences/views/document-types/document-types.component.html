@@ -1,0 +1,16 @@
+<div class="grid-container">
+  <app-view-header title="{{FormData['FormTitle']}}" description="{{FormData['FormDescription']}}"></app-view-header>
+  <mat-card [ngClass]="fromshow?'data-form visible':'data-form hidden'">
+    <app-data-form [FunctionSlected]="FunctionSelected" [DataForm]="FormData['DataForm']"
+      [DefaultValues]="DefaultValues"></app-data-form>
+  </mat-card>
+  <mat-card id="Grid" [ngClass]="fromshow ? 'data-grid' : 'data-grid top'">
+    <app-data-grid [DataGrid]="FormData['DataGridView']"></app-data-grid>
+  </mat-card>
+  <mat-card-actions align="end">
+    <app-form-buttons [IsMultiSelected]="this.datagrid?.isMultiSelected" [IsSelected]="this.datagrid?.isSelected"
+      [formshow]="fromshow" [formvalid]="this.dataform?.myForm?.invalid" [ButtonsData]="FormData['Actions']"
+      (onNewClick)="New()" (onDiscardClick)="Discard()" (onEditClick)="Edit()" (onSaveClick)="Save(FunctionSelected)"
+      (onDeleteClick)="Delete()" (onRefreshClick)="Refresh()"></app-form-buttons>
+  </mat-card-actions>
+</div>
