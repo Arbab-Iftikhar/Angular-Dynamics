@@ -1,0 +1,76 @@
+{
+    "FormId": "",
+    "FormTitle": "Access Control",
+    "FormDescription": "User Access",
+    "Type": "NON_WIZARD",
+    "Active": "false",
+    "DataForm": {
+      "Fields": [
+        
+        {
+          "ControlId": "Active",
+          "label": "Select  Your Role",
+          "value": "Select",
+          "placeholder": "",
+          "type": "select",
+          "type_options": [
+            "Admin",
+            "Manager",
+            "User"
+          ],
+          "colspan": "1",
+          "validators": {}
+        },
+    
+        {
+            "ControlId": "DocumentTypeId",
+            "label": "Enter User Id",
+            "value": "",
+            "placeholder": "Ex. Document Type hint",
+            "type": "text",
+            "colspan": "1",
+            "validators": {
+              "required": true,
+              "minLength": 3
+            }
+          },
+          {
+            "ControlId": "PasswordTypeId",
+            "label": "Enter Password",
+            "value": "",
+            "placeholder": "Ex. Document Type hint",
+            "type": "text",
+            "colspan": "1",
+            "validators": {
+              "required": true,
+              "minLength": 3
+            }
+        }
+          
+      ]
+    },
+    "DataGridView": {
+      "Columns": [
+
+        {
+            "ColumnId": "Active",
+            "label": "User Role",
+            "type": "text"
+        },
+        {
+            "ColumnId": "DocumentTypeId",
+            "label": "User ID",
+            "type": "text"
+        }
+      ],
+      "Properties": {
+        "SelectionColumn": true
+      }
+    },
+    "Actions": [
+      "ADD",
+      "EDIT",
+      "FETCH",
+      "DELETE"
+    ]
+  }

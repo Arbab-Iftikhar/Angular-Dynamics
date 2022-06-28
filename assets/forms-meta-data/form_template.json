@@ -1,0 +1,105 @@
+{
+    "FormTitle": "Document Types",
+    "FormDescription": "Your Document Types",
+    "DataForm": {
+      "Fields": {
+        "Inputs": [
+          {
+            "ControlId": "DateRange",
+            "label": "Date Range ",
+            "value": "",
+            "placeholder": "Date Range",
+            "type": "date-range",
+            "type_options": {
+              "start": "",
+              "end": ""
+            },
+            "colspan": "1",
+            "validators": {}
+          },
+          {
+            "name": "DocumentTypeId",
+            "label": "Document Type Id",
+            "value": "",
+            "hint": "Ex. Document Type hint",
+            "type": "text",
+            "validators": [{
+              "required": true,
+              "minLength": 3
+            }]
+          },
+          {
+            "name": "Gender",
+            "label": "Gender",
+            "value": "",
+            "hint": "Ex. Document Type hint",
+            "type": "option",
+            "type_options" : ["Male","Female"],
+            "validators": [{
+              "required": true,
+              "minLength": 3
+            }]
+          },
+          {
+            "name": "Select",
+            "label": "Select Option",
+            "value": "",
+            "hint": "Ex. Document Type hint",
+            "type": "select",
+            "type_options" : ["Male","Female"],
+            "validators": [{
+              "required": true,
+              "minLength": 3
+            }]
+          },
+          {
+            "name": "DocumentTypeName",
+            "label": "Name",
+            "value": "",
+            "hint": "Ex. Document Name hint",
+            "type": "text",
+            "validators": [{
+              "required": true,
+              "minLength": 5
+            }]
+          },
+          {
+            "name": "Active",
+            "label": "Active",
+            "value": "true",
+            "hint": "",
+            "type": "checkbox",
+            "validators": {}
+          }
+        ],
+        "Rows" : [
+          {
+            "id" : 1
+          },
+          {
+            "id" : 2
+          }
+        ]
+      },
+      "Actions": [{
+          "name": "Delete"
+        },
+        {
+          "name": "Edit"
+        },
+        {
+          "name": "Save"
+        },
+        {
+          "name": "Fetch"
+        }
+      ]
+    },
+    "DataGridView": {
+      "controls": [{
+        "name": "Person"
+      }]
+    },
+    "Actions": [{}]
+  }
+  

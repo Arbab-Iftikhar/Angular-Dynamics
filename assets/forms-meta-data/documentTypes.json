@@ -1,0 +1,90 @@
+{
+  "FormId": "",
+  "FormTitle": "Document Types",
+  "FormDescription": "Your Document Types",
+  "Type": "NON_WIZARD",
+  "Active": "false",
+  "DataForm": {
+    "Fields": [
+      {
+        "ControlId": "DocumentTypeId",
+        "label": "Document Type Id",
+        "value": "",
+        "placeholder": "Ex. Document Type hint",
+        "type": "text",
+        "colspan": "1",
+        "validators": {
+          "required": true,
+          "minLength": 3
+        }
+      },
+      {
+        "ControlId": "DocumentTypeName",
+        "label": "Document Name",
+        "value": "",
+        "placeholder": "Ex. Document Name hint",
+        "type": "text",
+        "colspan": "1",
+        "validators": {
+          "required": true,
+          "minLength": 5
+        }
+      },
+      {
+        "ControlId": "outputTyep",
+        "label": "PDF/XLX/Word",
+        "value": "",
+        "placeholder": "Ex. Document Name hint",
+        "type": "text",
+        "colspan": "1",
+        "validators": {
+          "required": true,
+          "minLength": 5
+        }
+      },
+      {
+        "ControlId": "Active",
+        "label": "Active",
+        "value": "Active",
+        "placeholder": "",
+        "type": "select",
+        "type_options": [
+          "Active",
+          "Not Active"
+        ],
+        "colspan": "1",
+        "validators": {}
+      }
+    ]
+  },
+  "DataGridView": {
+    "Columns": [
+      {
+        "ColumnId": "DocumentTypeId",
+        "label": "Document Type Id",
+        "type": "text"
+      },
+      {
+        "ColumnId": "DocumentTypeName",
+        "label": "Document Type Name",
+        "type": "text"
+      },
+      {
+        "ColumnId": "Active",
+        "label": "Active",
+        "type": "boolean"
+      }
+    ],
+    "Properties": {
+      "SelectionColumn": true
+    }
+  },
+  "Actions": [
+    "ADD",
+    "EDIT",
+    "FETCH",
+    "DELETE",
+    "VIEW"
+
+  ]
+}

@@ -1,0 +1,97 @@
+{  "FormId": "",
+    "FormTitle": "User Setup",
+    "FormDescription": "User Role",
+    "Type": "NON_WIZARD",
+    "Active": "false",
+    "DataForm": {
+      "Fields": [
+          {
+
+            "ControlId": "outputTyep",
+            "label": "Name",
+            "value": "",
+            "placeholder": "Ex. Document Name hint",
+            "type": "text",
+            "colspan": "1",
+            "validators": {
+              "required": true,
+              "minLength": 3}
+            },
+              {
+                "ControlId": "outputTyep1",
+               
+                "label": "Father Name",
+                "value": "",
+                "placeholder": "Ex. Document Name hint",
+                "type": "text",
+                "colspan": "1",
+                "validators": {
+                  "required": true,
+                  "minLength": 3
+              }
+            },
+            {
+
+                "ControlId": "outputTyep2",
+
+                "value": "",
+                "placeholder": "Ex. Document Name hint",
+                "type": "date",
+                "label": "DOB",
+                "colspan": "1",
+                "validators": {
+                  "required": true
+
+                }
+                },
+                {
+                    
+
+                        "ControlId": "outputTyep3",
+                        "label": "Phone Number",
+                        "value": "",
+                        "placeholder": "Enter Valid Phone Number",
+                        "type": "number",
+                        "colspan": "1",
+                        "validators": {
+                          "required": true,
+                          "minLength": 11}
+                        }
+      ]},
+      "DataGridView": {
+        "Columns": [
+          {
+            "ColumnId": "outputTyep",
+            "label": "Name",
+            "type": "text"
+          },
+          {
+            "ColumnId": "outputTyep1",
+            "label": "Father Name",
+            "type": "text"
+          },
+          {
+            "ColumnId": "outputTyep2",
+            "label": "Date of Birth",
+            "type": "date"
+          },
+          {
+            "ColumnId": "outputTyep3",
+            "label": "Phone Number",
+            "type": "number"
+          }
+          
+        ],
+        "Properties": {
+          "SelectionColumn": true
+        }
+      },
+      "Actions": [
+        "ADD",
+        "EDIT",
+        "FETCH",
+        "DELETE"
+
+      ]}
+              
+    

@@ -1,0 +1,81 @@
+{
+    "FormId": "",
+    "FormTitle": "Country Setup",
+    "FormDescription": "User Role",
+    "Type": "NON_WIZARD",
+    "Active": "false",
+    "DataForm": {
+      "Fields": [
+        
+        {
+          "ControlId": "Active",
+          "label": "Select Country",
+          "value": "Select",
+          "placeholder": "",
+          "type": "select",
+          "type_options": [
+            "Pakistan",
+            "Turkey",
+            "USA","UAE","Germany","Singapore"
+          ],
+          "colspan": "1",
+          "validators": {}
+        },
+        {
+            "ControlId": "Active0",
+            "label": "Select State",
+            "value": "Select",
+            "placeholder": "",
+            "type": "select",
+            "type_options": [
+              "States"
+            ],
+            "colspan": "1",
+            "validators": {}
+          },
+          {
+            "ControlId": "Active1",
+            "label": "Select Country Code",
+            "value": "Select",
+            "placeholder": "",
+            "type": "select",
+            "type_options": [
+              "+92",
+              "+923",
+              "+001"
+            ],
+            "colspan": "1",
+            "validators": {}
+          }
+      ]
+    },
+    "DataGridView": {
+      "Columns": [
+
+        {
+            "ColumnId": "Active",
+            "label": "Country Details",
+            "type": "text"
+        },
+        {
+            "ColumnId": "Active0",
+            "label": "State",
+            "type": "text"
+        },
+        {
+            "ColumnId": "Active1",
+            "label": "Country Code",
+            "type": "text"
+        }
+      ],
+      "Properties": {
+        "SelectionColumn": true
+      }
+    },
+    "Actions": [
+      "ADD",
+      "EDIT",
+      "FETCH",
+      "DELETE"
+    ]
+  }

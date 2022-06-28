@@ -1,0 +1,62 @@
+{
+  "FormId":"",
+  "FormTitle": "Document Types",
+  "FormDescription": "Your Document Types",
+  "Type":"NON_WIZARD",
+  "Active":"false",
+  "DataForm": {
+    "Fields": [
+      {
+        "name": "DocumentTypeId",
+        "label": "Document Type basdbajhsgdjhasdjhasdvjhascdvhas asdjhasgdjasvdasbnd agsdasda dvId",
+        "value": "",
+        "placeholder": "Ex. Document Type hint",
+        "type": "text",
+        "colspan": "1",
+        "validators": {
+          "required": true,
+          "minLength": 3
+        }
+      },
+      {
+        "name": "DocumentTypeName",
+        "label": "Document Name",
+        "value": "",
+        "placeholder": "Ex. Document Name hint",
+        "type": "text",
+        "colspan": "1",
+        "validators": {
+          "required": true,
+          "minLength": 5
+        }
+      },
+      {
+        "name": "Active",
+        "label": "Active",
+        "value": "",
+        "placeholder": "",
+        "type": "checkbox",
+        "colspan": "2",
+        "validators": {
+          "requiredTrue" : "requiredTrue"
+        }
+      }
+    ]
+  },
+  "DataGridView": {
+    "Columns":["Select","Document Type ID","Document Type Name","Active"],
+    "Data":[
+      {
+        "Document Type ID":"1234",
+        "Document Type Name":"CNIC Card",
+        "Active":"active"
+      },
+      {
+        "Document Type ID":"098",
+        "Document Type Name":"Certificate",
+        "Active":"not active"
+      }
+    ]
+  },
+  "Actions": ["ADD","EDIT","FETCH","DELETE"]
+}

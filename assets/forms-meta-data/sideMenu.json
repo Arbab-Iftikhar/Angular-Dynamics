@@ -1,0 +1,181 @@
+[
+  {
+    "routerLink": "/dashboard",
+    "data": {
+      "menu": {
+        "title": "Dashboard",
+        "icon": "dashboard",
+        "menuId": 1,
+        "selected": false,
+        "expanded": false,
+        "order": 1
+      }
+    },
+    "children": []
+  },
+  {
+    "routerLink": "/usermanagement",
+    "data": {
+      "menu": {
+        "title": "User Management",
+        "icon": "dashboard",
+        "menuId": 1,
+        "selected": false,
+        "expanded": false,
+        "order": 1
+      }
+    },
+    "children": [
+      {
+        "routerLink": "preferences/SetupUser",
+        "data": {
+          "menu": {
+            "title": "Setup User",
+            "icon": "manage_accounts",
+            "menuId": 705,
+            "selected": false,
+            "expanded": false,
+            "order": 7,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "preferences/Access",
+        "data": {
+          "menu": {
+            "title": "Access Permissions",
+            "icon": "engineering",
+            "menuId": 706,
+            "selected": false,
+            "expanded": false,
+            "order": 8,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "userRestPassword",
+        "data": {
+          "menu": {
+            "title": "Rest User Password",
+            "icon": "settings_suggest",
+            "menuId": 718,
+            "selected": false,
+            "expanded": false,
+            "order": 10,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "preferences/ChangePassword",
+        "data": {
+          "menu": {
+            "title": "Change Password",
+            "icon": "password",
+            "menuId": 709,
+            "selected": false,
+            "expanded": false,
+            "order": 11,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "routerLink": "Preferences",
+    "data": {
+      "menu": {
+        "title": "Preferences",
+        "icon": "construction",
+        "menuId": 700,
+        "selected": false,
+        "expanded": false,
+        "order": 504
+      }
+    },
+    "children": [
+      {
+        "routerLink": "preferences/CountrySetup",
+        "data": {
+          "menu": {
+            "title": "Country Setup",
+            "icon": "flag",
+            "menuId": 701,
+            "selected": false,
+            "expanded": false,
+            "order": 1,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "instituteSetup",
+        "data": {
+          "menu": {
+            "title": "Institute Setup",
+            "icon": "dashboard",
+            "menuId": 702,
+            "selected": false,
+            "expanded": false,
+            "order": 3,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "preferences/UserRole",
+        "data": {
+          "menu": {
+            "title": "User Roles",
+            "icon": "admin_panel_settings",
+            "menuId": 703,
+            "selected": false,
+            "expanded": false,
+            "order": 5,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "userDepartment",
+        "data": {
+          "menu": {
+            "title": "Department",
+            "icon": "groups",
+            "menuId": 704,
+            "selected": false,
+            "expanded": false,
+            "order": 6,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      },
+      {
+        "routerLink": "preferences/documentTypes",
+        "data": {
+          "menu": {
+            "title": "Document Type",
+            "icon": "source",
+            "menuId": 710,
+            "selected": false,
+            "expanded": false,
+            "order": 12,
+            "operations": "[SAVE,UPDATE,DELETE,FETCH,CLEAR]"
+          }
+        },
+        "children": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+    "Counters": [
+        {
+            "value": "1,200",
+            "label": "Template",
+            "icon": "account_circle",
+            "color": "#26c6da"
+        },
+        {
+            "value": "99",
+            "label": "Template",
+            "icon": "local_mall",
+            "color": "#ffb22b"
+        },
+        {
+            "value": "3,142",
+            "label": "Template",
+            "icon": "stars",
+            "color": "#3f51b5"
+        },
+        {
+            "value": "100",
+            "label": "Template",
+            "icon": "content_paste",
+            "color": "#fc4b6c"
+        }
+    ]
+}
