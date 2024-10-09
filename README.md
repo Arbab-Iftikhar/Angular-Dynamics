@@ -1,2 +1,2 @@
 # Angular-Dynamics
-Dynamic Form Creation adn rendering with JSON. 
+Dynamic Form Creation andrendering with JSON. 
